@@ -1,0 +1,926 @@
+{
+	"info": {
+		"_postman_id": "1de64569-378a-4d88-b703-b43c6c578a1d",
+		"name": "Control de Empresas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "saveCompany",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Audi",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Ciudad de Guatemala",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "75849623",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Audi@audi.com",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Audi123",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "8592635741",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/company/saveCompany",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"company",
+								"saveCompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCompany",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZWVjMDIzMmI1OTIzNzAzOTJkMDkiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRYMFg3NjIvUWR0dUt1UFlEMWMyRW51dmRLSUtMVmFYLmY1aURsOHNrRC5Tb2ZMdThYdzB2NiIsImlhdCI6MTU4MzI4MDE5OCwiZXhwIjoxNTgzMjgxMDk4fQ.ja5Q1mQj4vKPbiyXeEAPREc2rvItkFV4ONXmmwYAHlo\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "Ciudad de Guatemala, Zona 10",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/company/updateCompany/5e5eeec0232b592370392d09",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"company",
+								"updateCompany",
+								"5e5eeec0232b592370392d09"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeCompany",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZWVjMDIzMmI1OTIzNzAzOTJkMDkiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRYMFg3NjIvUWR0dUt1UFlEMWMyRW51dmRLSUtMVmFYLmY1aURsOHNrRC5Tb2ZMdThYdzB2NiIsImlhdCI6MTU4MzI4MDE5OCwiZXhwIjoxNTgzMjgxMDk4fQ.ja5Q1mQj4vKPbiyXeEAPREc2rvItkFV4ONXmmwYAHlo\"",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/company/removeCompany/5e5eeec0232b592370392d09",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"company",
+								"removeCompany",
+								"5e5eeec0232b592370392d09"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginCompany",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Audi123",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "8592635741",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/company/loginCompany",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"company",
+								"loginCompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listCompanies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3800/company/listCompanies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"company",
+								"listCompanies"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "http://localhost:3800/saveEmployee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Cristopher",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Pineda",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Jefe de Area",
+									"type": "text"
+								},
+								{
+									"key": "departament",
+									"value": "Contabilidad",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "85974526",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "Cris@segurosroble.com",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "5e4db43bb0d0301a38b21d48",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/saveEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"saveEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3800/updateEmployee/5e4db6ffb0d0301a38b21d49",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Raul",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lastname",
+									"value": "Lopez",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "Tecnico I",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "departament",
+									"value": "Tics",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "26534152",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "raul@gmail.com",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/updateEmployee/5e4db6ffb0d0301a38b21d49",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"updateEmployee",
+								"5e4db6ffb0d0301a38b21d49"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3800/removeEmployee/5e4db6ffb0d0301a38b21d49",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search",
+									"value": "raul",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/searchEmployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"searchEmployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3800/countEmployee/5e4db43bb0d0301a38b21d48",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3800/countEmployee/5e4db43bb0d0301a38b21d48",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"countEmployee",
+								"5e4db43bb0d0301a38b21d48"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Branch",
+			"item": [
+				{
+					"name": "saveBranch",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZjBjZDBhNDdhMTE0ZmM4NmFhYmEiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRMNzdXVzhCVER2Q3pQdy9VeldrdkJldFBCaWNWQ1JueG5yZloyakV0Z2pyZWN1TXNvYnd3aSIsImlhdCI6MTU4MzM3Mzc1NCwiZXhwIjoxNTgzMzc0NjU0fQ.rNO2V_qYKdmEdfsYLGgFBBS25tTgciu4EDHM22LGxUE\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Audi center 1",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "23658974",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Ciudad de Guatemala, zona 1",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "5e5ef0cd0a47a114fc86aaba",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/branch/saveBranch",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"branch",
+								"saveBranch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeBranch",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZjBjZDBhNDdhMTE0ZmM4NmFhYmEiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRMNzdXVzhCVER2Q3pQdy9VeldrdkJldFBCaWNWQ1JueG5yZloyakV0Z2pyZWN1TXNvYnd3aSIsImlhdCI6MTU4MzI5MTM2MCwiZXhwIjoxNTgzMjkyMjYwfQ.EFPznI1u3CJgWRyNl935Vn1noiCjlymlA3sEM-RRVZ8\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "Ciudad de Guatemala, Zona 4",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/branch/removeBranch/5e5ef0cd0a47a114fc86aaba/5e5ef28c0a47a114fc86aabc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"branch",
+								"removeBranch",
+								"5e5ef0cd0a47a114fc86aaba",
+								"5e5ef28c0a47a114fc86aabc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateBranch",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZjBjZDBhNDdhMTE0ZmM4NmFhYmEiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRMNzdXVzhCVER2Q3pQdy9VeldrdkJldFBCaWNWQ1JueG5yZloyakV0Z2pyZWN1TXNvYnd3aSIsImlhdCI6MTU4MzI5MTM2MCwiZXhwIjoxNTgzMjkyMjYwfQ.EFPznI1u3CJgWRyNl935Vn1noiCjlymlA3sEM-RRVZ8\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "Ciudad de Guatemala, Zona 4",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/branch/updateBranch/5e5ef0cd0a47a114fc86aaba/5e5ef28c0a47a114fc86aabc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"branch",
+								"updateBranch",
+								"5e5ef0cd0a47a114fc86aaba",
+								"5e5ef28c0a47a114fc86aabc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listBranch",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZjBjZDBhNDdhMTE0ZmM4NmFhYmEiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRMNzdXVzhCVER2Q3pQdy9VeldrdkJldFBCaWNWQ1JueG5yZloyakV0Z2pyZWN1TXNvYnd3aSIsImlhdCI6MTU4MzM3OTUxNywiZXhwIjoxNTgzMzgwNDE3fQ.zv3Tdeujyvm-zB3OK3eZ7Ict7ShQNA8B2Kf_NI_RTCM\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:3800/branch/listBranch/5e5ef0cd0a47a114fc86aaba",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"branch",
+								"listBranch",
+								"5e5ef0cd0a47a114fc86aaba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "setProduct",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZjBjZDBhNDdhMTE0ZmM4NmFhYmEiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRMNzdXVzhCVER2Q3pQdy9VeldrdkJldFBCaWNWQ1JueG5yZloyakV0Z2pyZWN1TXNvYnd3aSIsImlhdCI6MTU4MzM3MzEyMCwiZXhwIjoxNTgzMzc0MDIwfQ.jUEriWjk_E7ZmUZyZ3sWhfFWydG8dtbvqo8SgP5qUnY\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_product",
+									"value": "5e605ba05733b2375407c421",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "branch",
+									"value": "5e605dc78bd3612df8087c31",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/branch/setProduct/5e5ef0cd0a47a114fc86aaba",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"branch",
+								"setProduct",
+								"5e5ef0cd0a47a114fc86aaba"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "saveProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZjBjZDBhNDdhMTE0ZmM4NmFhYmEiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRMNzdXVzhCVER2Q3pQdy9VeldrdkJldFBCaWNWQ1JueG5yZloyakV0Z2pyZWN1TXNvYnd3aSIsImlhdCI6MTU4MzM3MzEyMCwiZXhwIjoxNTgzMzc0MDIwfQ.jUEriWjk_E7ZmUZyZ3sWhfFWydG8dtbvqo8SgP5qUnY\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Audi M3 1999",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "125000",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "5e5ef0cd0a47a114fc86aaba",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/product/saveProduct",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"product",
+								"saveProduct"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "udpateProduct",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZjBjZDBhNDdhMTE0ZmM4NmFhYmEiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRMNzdXVzhCVER2Q3pQdy9VeldrdkJldFBCaWNWQ1JueG5yZloyakV0Z2pyZWN1TXNvYnd3aSIsImlhdCI6MTU4MzM3OTEyNCwiZXhwIjoxNTgzMzgwMDI0fQ.kNKw0EwQ2OYKsLSpV_dpz9KA4x3oQLz_d_mRO3IvA1c\"",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Audi R8",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/product/updateProduct/5e5ef0cd0a47a114fc86aaba/5e604330eedf673218fb9457",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"product",
+								"updateProduct",
+								"5e5ef0cd0a47a114fc86aaba",
+								"5e604330eedf673218fb9457"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZjBjZDBhNDdhMTE0ZmM4NmFhYmEiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRMNzdXVzhCVER2Q3pQdy9VeldrdkJldFBCaWNWQ1JueG5yZloyakV0Z2pyZWN1TXNvYnd3aSIsImlhdCI6MTU4MzM4MDUyOCwiZXhwIjoxNTgzMzgxNDI4fQ.FiGNcCboz8iSFulW45xxLagmiaHKlMGLUc6XrsaakCc\"",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search",
+									"value": "Audi R8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/product/searchProducts/5e5ef0cd0a47a114fc86aaba",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"product",
+								"searchProducts",
+								"5e5ef0cd0a47a114fc86aaba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeProduct",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZjBjZDBhNDdhMTE0ZmM4NmFhYmEiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRMNzdXVzhCVER2Q3pQdy9VeldrdkJldFBCaWNWQ1JueG5yZloyakV0Z2pyZWN1TXNvYnd3aSIsImlhdCI6MTU4MzM4Mjc3NiwiZXhwIjoxNTgzMzgzNjc2fQ.pGhNRfM5Qdxjvj_3vD635A4nWAl-XG8QWtdZzW8kGl0\"",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/product/removeProduct/5e5ef0cd0a47a114fc86aaba/5e605ba05733b2375407c421",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"product",
+								"removeProduct",
+								"5e5ef0cd0a47a114fc86aaba",
+								"5e605ba05733b2375407c421"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listProducts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVlZjBjZDBhNDdhMTE0ZmM4NmFhYmEiLCJuYW1lIjoiQXVkaSIsImFkZHJlc3MiOiJDaXVkYWQgZGUgR3VhdGVtYWxhIiwicGhvbmUiOjc1ODQ5NjIzLCJlbWFpbCI6IkF1ZGlAYXVkaS5jb20iLCJ1c2VybmFtZSI6IkF1ZGkxMjMiLCJwYXNzd29yZCI6IiQyYSQxMCRMNzdXVzhCVER2Q3pQdy9VeldrdkJldFBCaWNWQ1JueG5yZloyakV0Z2pyZWN1TXNvYnd3aSIsImlhdCI6MTU4MzM4NTQxOCwiZXhwIjoxNTgzMzg2MzE4fQ.repG5OhShL6YuaaHztPgLcqcde5h6-HErVDwfbRK6V0\"",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/product/listProducts/5e5ef0cd0a47a114fc86aaba",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"product",
+								"listProducts",
+								"5e5ef0cd0a47a114fc86aaba"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
